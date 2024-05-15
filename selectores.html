@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+        p {
+            color: chocolate;
+        }
+        p:hover {
+            color: skyblue;
+        }
+        div p:nth-child(2) {
+            color: darkblue;
+        }
+        p::first-letter {
+            color: blueviolet;
+        }
+        p::before {
+            content: "💁🏼";
+        }
+        p::after {
+            content: "💁🏼";
+        }
+        ::placeholder {
+            color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Carrera</p>
+        <p>Electrónica</p>
+        <p>Segundo semestre</p>
+        <input type="text" placeholder="Ingresa el nombre">
+    </div>
+</body>
+</html>
