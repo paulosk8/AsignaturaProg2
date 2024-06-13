@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Relleno y margenes a las secciones semanticas */
+header, nav, main, section, article, aside, footer {
+    padding: 20px;
+    margin: 10px;
+}
+/* Estilos para el encabezado */
+header {
+    background-color: #18921c;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+/* Estilos para la lista de navegecacion */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+/*  Estilos para los elementos de la lista */
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+/* Estilos para los enlaces de nevegacion */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Estilos para el contenedor de los section y aside */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Estilos de las secciones */
+section {
+    flex: 1; /* Hace que las secciones ocupen el mismpo espacio flexible */
+    min-width: 300px; /* Define un ancho minimo de 300px */
+    background-color: #f9f9f9; 
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* Estilos para el aside */
+aside {
+    flex: 1; /* Hace que el aside ocupe el mismo espacio flexible que las secciones */
+    background-color: #f4f4f4; /* Define un color de fondo gris claro para el aside */
+    padding: 10px; /* Agrega espacio interno alrededor del contenido del aside */
+    min-width: 300px;
+    box-sizing: border-box;
+}
+/* Estilos a los articulos */
+article {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+article:hover {
+    background-color: #f9f9f9;
+}
+/* Estilos para el pie de pagina */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
