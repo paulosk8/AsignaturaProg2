@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Resistencias</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de Resistencias</h1>
+      <div class="resistor">
+        <div class="leg leg-left"></div>
+        <div class="body">
+          <div class="band band1"></div>
+          <div class="band band2"></div>
+          <div class="band band3"></div>
+          <div class="band band4"></div>
+        </div>
+        <div class="leg leg-right"></div>
+      </div>
+      <form id="resistor-form">
+        <label for="band1">Banda 1:</label>
+        <select id="band1" name="band1">
+          <option value="0">Negro</option>
+          <option value="1">Marrón</option>
+          <option value="2">Rojo</option>
+          <option value="3">Naranja</option>
+          <option value="4">Amarillo</option>
+          <option value="5">Verde</option>
+          <option value="6">Azul</option>
+          <option value="7">Violeta</option>
+          <option value="8">Gris</option>
+          <option value="9">Blanco</option>
+        </select>
+        <label for="band2">Banda 2:</label>
+        <select id="band2" name="band2">
+          <option value="0">Negro</option>
+          <option value="1">Marrón</option>
+          <option value="2">Rojo</option>
+          <option value="3">Naranja</option>
+          <option value="4">Amarillo</option>
+          <option value="5">Verde</option>
+          <option value="6">Azul</option>
+          <option value="7">Violeta</option>
+          <option value="8">Gris</option>
+          <option value="9">Blanco</option>
+        </select>
+        <label for="band3">Multiplicador:</label>
+        <select id="band3" name="band3">
+          <option value="0">Negro</option>
+          <option value="1">Marrón</option>
+          <option value="2">Rojo</option>
+          <option value="3">Naranja</option>
+          <option value="4">Amarillo</option>
+          <option value="5">Verde</option>
+          <option value="6">Azul</option>
+          <option value="7">Violeta</option>
+          <option value="8">Gris</option>
+          <option value="9">Blanco</option>
+          <option value="-1">Dorado</option>
+          <option value="-2">Plateado</option>
+        </select>
+        <label for="band4">Tolerancia:</label>
+        <select id="band4" name="band4">
+          <option value="1">Marrón (±1%)</option>
+          <option value="2">Rojo (±2%)</option>
+          <option value="0.5">Verde (±0.5%)</option>
+          <option value="0.25">Azul (±0.25%)</option>
+          <option value="0.1">Violeta (±0.1%)</option>
+          <option value="5">Dorado (±5%)</option>
+          <option value="10">Plateado (±10%)</option>
+        </select>
+        <button type="button" onclick="calculateResistance()">
+          Calcular Resistencia
+        </button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
